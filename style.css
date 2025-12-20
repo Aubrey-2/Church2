@@ -4,17 +4,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  max-width: 1200px; /* or remove completely */
-  padding: 16px;
-  margin: auto;
-}
 
 body {
   background-color: #F9F7F7;
   color: #333333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  font-size: 1.05rem; /* Slightly larger for readability */
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 24px;
+  margin: auto;
 }
 
 /* Header */
@@ -50,7 +54,7 @@ nav a:hover {
   padding: 40px;
   max-width: 800px;
   width: 90%;
-  margin: 50px auto;
+  margin: 70px auto;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
@@ -111,11 +115,11 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header,
   .form-container {
     padding: 20px;
@@ -123,6 +127,17 @@ footer {
 
   nav a {
     display: block;
-    margin: 1px 0 0;
+    margin: 5px 0 0;
+  }
+
+  .form-container {
+    width: 95%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
   }
 }
