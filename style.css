@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  max-width: 1200px; /* or remove completely */
+  padding: 16px;
+  margin: auto;
+}
 
 body {
   background-color: #F9F7F7;
